@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>chatbot interface by d dot py - yt</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+  <!-- <link rel="stylesheet" href="./css/main.css"> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/textLoading.css')}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <section>
+    <div class="screen">
+      <span id="menu-btn" class="menu-btn" onclick="toggleMenu()">⇉</span>
+
+
+      <div class="container">
+        <div class="container-dropdown-wrap">
+
+          <span class="chatHeading">[ChatWindow] D DOT PY - youtube</span>
+        </div>
+
+        <div class="message-section">
+          <div id="messages-wrap" class="messages-wrap">
+          </div>
+
+          <div class="area-wrap">
+            <div>
+              <textarea class="message-area" id="message-area"></textarea>
+            </div>
+
+            <div>
+              <button onclick="addMessage()" class="message-send">
+                ▶
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <script src="./js/main.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+
+
+</body>
+
+</html>
